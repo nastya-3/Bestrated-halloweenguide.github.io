@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Halloween Party Planning Guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        .cover-page {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0b2e 0%, #0f0514 50%, #1a0b2e 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-page::before {
+            content: '🎃';
+            position: absolute;
+            font-size: 20em;
+            opacity: 0.05;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cover-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 5em;
+            font-weight: 900;
+            color: #ff6b00;
+            text-shadow: 0 0 30px rgba(255, 107, 0, 0.8);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .cover-subtitle {
+            font-size: 2em;
+            color: #c8a2ff;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .cover-description {
+            font-size: 1.3em;
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        .cover-stats {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .cover-stat {
+            text-align: center;
+        }
+
+        .cover-stat-number {
+            font-size: 3.5em;
+            font-weight: 700;
+            color: #ff6b00;
+            display: block;
+        }
+
+        .cover-stat-label {
+            font-size: 1.1em;
+            color: #c8a2ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            border-bottom: 4px solid #ff6b00;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section-number {
+            font-size: 1em;
+            color: #ff6b00;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            font-weight: 700;
+            color: #1a0b2e;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            line-height: 1.8;
+        }
+
+        .content-block {
+            margin-bottom: 40px;
+        }
+
+        .content-block h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            color: #2c2c2c;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content-block h4 {
+            font-size: 1.3em;
+            color: #ff6b00;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .content-block p {
+            font-size: 1.1em;
+            color: #444;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .content-block ul, .content-block ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .content-block li {
+            font-size: 1.05em;
+            color: #444;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+            border-left: 5px solid #ff6b00;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box h4 {
+            color: #ff6b00;
+            margin-top: 0;
+        }
+
+        .tip-box {
+            background: #f0f8ff;
+            border-left: 5px solid #4a90e2;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .tip-box strong {
+            color: #4a90e2;
+            font-size: 1.1em;
+        }
+
+        .warning-box {
+            background: #fff5f5;
+            border-left: 5px solid #e74c3c;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: #e74c3c;
+            font-size: 1.1em;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: #ff6b00;
+            box-shadow: 0 8px 25px rgba(255, 107, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .card h4 {
+            color: #1a0b2e;
+            margin-bottom: 15px;
+        }
+
+        .card-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding-left: 35px;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00c853;
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 40px 0;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #ff6b00;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -48px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ff6b00;
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 2px #ff6b00;
+        }
+
+        .timeline-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #ff6b00;
+            margin-bottom: 10px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+
+        .table th {
+            background: #1a0b2e;
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .table tr:hover {
+            background: #f9f9f9;
+        }
+
+        .recipe-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .recipe-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #ff6b00;
+        }
+
+        .recipe-icon {
+            font-size: 2.5em;
+        }
+
+        .recipe-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6em;
+            color: #1a0b2e;
+            margin: 0;
+        }
+
+        .recipe-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            color: #666;
+        }
+
+        .recipe-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .ingredients-list {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .ingredients-list h5 {
+            color: #ff6b00;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-page {
+            background: #1a0b2e;
+            color: #fff;
+            padding: 60px 40px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-page h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #ff6b00;
+            margin-bottom: 20px;
+        }
+
+        .footer-page p {
+            font-size: 1.2em;
+            color: #c8a2ff;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, transparent, #ff6b00, transparent);
+            margin: 60px 0;
+        }
+
+        @media print {
+            .cover-page {
+                page-break-after: always;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cover-title {
+                font-size: 3em;
+            }
+            .cover-subtitle {
+                font-size: 1.5em;
+            }
+            .section-title {
+                font-size: 2.2em;
+            }
+            .container {
+                padding: 40px 20px;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- COVER PAGE -->
+    <div class="cover-page">
+        <div class="cover-subtitle">THE ULTIMATE</div>
+        <h1 class="cover-title">HALLOWEEN<br>PARTY GUIDE</h1>
+        <p class="cover-description">
+            Your complete blueprint for hosting an unforgettable Halloween celebration. 
+            From spine-chilling themes to killer cocktails, this professional guide has everything 
+            you need to become the ultimate party host.
+        </p>
+        <div class="cover-stats">
+            <div class="cover-stat">
+                <span class="cover-stat-number">100+</span>
+                <span class="cover-stat-label">Expert Tips</span>
+            </div>
+            <div class="cover-stat">
+                <span class="cover-stat-number">20+</span>
+                <span class="cover-stat-label">Recipes</span>
+            </div>
+            <div class="cover-stat">
+                <span class="cover-stat-number">15</span>
+                <span class="cover-stat-label">Party Games</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABLE OF CONTENTS -->
+    <div class="container">
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">Table of Contents</div>
+            </div>
+            <div class="content-block">
+                <ol style="font-size: 1.2em; line-height: 2.5;">
+                    <li><strong>Party Planning Timeline</strong> - 4 weeks to party perfection</li>
+                    <li><strong>Theme Ideas & Decoration Guide</strong> - 10 stunning themes</li>
+                    <li><strong>Budget Planning</strong> - Host for $100-$1000+</li>
+                    <li><strong>Guest List & Invitations</strong> - The art of the perfect invite</li>
+                    <li><strong>Food & Catering</strong> - Menus for every theme</li>
+                    <li><strong>Cocktail Recipes</strong> - 20 show-stopping drinks</li>
+                    <li><strong>Party Games & Entertainment</strong> - Keep guests engaged all night</li>
+                    <li><strong>Music & Ambiance</strong> - Set the perfect mood</li>
+                    <li><strong>Photo Opportunities</strong> - Create Instagram-worthy moments</li>
+                    <li><strong>Safety & Hosting Etiquette</strong> - Be a responsible host</li>
+                    <li><strong>Day-Of Checklist</strong> - Execute flawlessly</li>
+                    <li><strong>Troubleshooting Guide</strong> - Handle any party emergency</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 1: PARTY PLANNING TIMELINE -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 01</div>
+                <h2 class="section-title">Party Planning Timeline</h2>
+                <p class="section-intro">Success is in the preparation. Follow this proven timeline to ensure nothing falls through the cracks.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">4 Weeks Before: Foundation Phase</div>
+                    <ul class="checklist">
+                        <li>Set your party date and start time (ideally a Friday or Saturday)</li>
+                        <li>Decide on your budget (see Budget Planning chapter)</li>
+                        <li>Choose your theme and color scheme</li>
+                        <li>Create preliminary guest list (aim for 15-30 people for home parties)</li>
+                        <li>Book any vendors (DJ, caterer, bartender) if using</li>
+                        <li>Reserve any rental equipment (tables, chairs, speakers)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">3 Weeks Before: Invitation Phase</div>
+                    <ul class="checklist">
+                        <li>Send out digital invitations (Evite, Paperless Post, or social media event)</li>
+                        <li>Include: date, time, location, theme, dress code, RSVP deadline</li>
+                        <li>Start shopping for decorations online (better selection, better prices)</li>
+                        <li>Order your costume if buying online</li>
+                        <li>Plan your signature cocktails and create shopping list</li>
+                        <li>Research and book photo booth props or backdrops</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">2 Weeks Before: Procurement Phase</div>
+                    <ul class="checklist">
+                        <li>Finalize guest count from RSVPs</li>
+                        <li>Purchase all decorations and non-perishable party supplies</li>
+                        <li>Create detailed food menu based on final guest count</li>
+                        <li>Buy alcohol and mixers (store with longer return policies)</li>
+                        <li>Plan your playlist or hire DJ</li>
+                        <li>Arrange designated driver situation or rideshare credits</li>
+                        <li>Deep clean your party space</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">1 Week Before: Preparation Phase</div>
+                    <ul class="checklist">
+                        <li>Send reminder to guests who haven't RSVP'd</li>
+                        <li>Prep any food that can be made ahead and frozen</li>
+                        <li>Test all cocktail recipes</li>
+                        <li>Set up major decorations that won't be damaged</li>
+                        <li>Charge all devices (speakers, lights, cameras)</li>
+                        <li>Create printed recipe cards for signature cocktails</li>
+                        <li>Designate spaces: dance floor, bar area, chill zone, photo booth</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">2 Days Before: Final Prep Phase</div>
+                    <ul class="checklist">
+                        <li>Shop for fresh ingredients and ice</li>
+                        <li>Prepare any food that can be refrigerated</li>
+                        <li>Set up furniture arrangement for optimal flow</li>
+                        <li>Test your sound system and lighting</li>
+                        <li>Put away valuables and fragile items</li>
+                        <li>Set up guest bathroom with extra supplies</li>
+                        <li>Prepare your costume and test fit everything</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Day Of: Execution Phase</div>
+                    <ul class="checklist">
+                        <li>Morning: Finish decorating, set up bar station</li>
+                        <li>Afternoon: Prep all fresh food items</li>
+                        <li>2 hours before: Get dressed, do makeup</li>
+                        <li>1 hour before: Do final walkthrough, test everything</li>
+                        <li>30 minutes before: Put on music, light candles, take a breath</li>
+                        <li>Party time: Greet guests, enjoy your hard work!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 Pro Tip:</strong> Create a party day binder with printed checklists, recipes, emergency contacts, and a timeline. This physical reference prevents phone distractions and keeps you organized when things get hectic.
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 2: THEME IDEAS -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 02</div>
+                <h2 class="section-title">10 Stunning Theme Ideas</h2>
+                <p class="section-intro">A cohesive theme transforms a party from ordinary to extraordinary. Choose one that matches your style and space.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <span class="card-icon">🏚️</span>
+                    <h4>1. Haunted Mansion</h4>
+                    <p><strong>Vibe:</strong> Elegant gothic horror</p>
+                    <p><strong>Colors:</strong> Black, deep purple, silver, burgundy</p>
+                    <p><strong>Decorations:</strong> Chandeliers with dripping candles, vintage frames, cobwebs, Victorian furniture</p>
+                    <p><strong>Dress Code:</strong> Victorian era, Gothic glamour</p>
+                    <p><strong>Perfect For:</strong> Upscale adult parties</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🌙</span>
+                    <h4>2. Witches' Coven</h4>
+                    <p><strong>Vibe:</strong> Mystical and magical</p>
+                    <p><strong>Colors:</strong> Black, emerald green, gold, deep purple</p>
+                    <p><strong>Decorations:</strong> Potion bottles, spell books, crystals, cauldrons, hanging herbs</p>
+                    <p><strong>Dress Code:</strong> Witches, warlocks, fortune tellers</p>
+                    <p><strong>Perfect For:</strong> Female-focused gatherings</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🧛</span>
+                    <h4>3. Vampire Ball</h4>
+                    <p><strong>Vibe:</strong> Sexy and sophisticated</p>
+                    <p><strong>Colors:</strong> Black, deep red, gold, ivory</p>
+                    <p><strong>Decorations:</strong> Red roses, wine goblets, candelabras, velvet draping, mirrors</p>
+                    <p><strong>Dress Code:</strong> Vampires, gothic formal wear</p>
+                    <p><strong>Perfect For:</strong> Couples and romantic atmospheres</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🎪</span>
+                    <h4>4. Creepy Carnival</h4>
+                    <p><strong>Vibe:</strong> Twisted circus horror</p>
+                    <p><strong>Colors:</strong> Red, black, white, gold stripes</p>
+                    <p><strong>Decorations:</strong> Vintage carnival posters, striped fabric, creepy clown props, circus lights</p>
+                    <p><strong>Dress Code:</strong> Ringmasters, creepy clowns, circus freaks</p>
+                    <p><strong>Perfect For:</strong> Adventurous party crowds</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🧟</span>
+                    <h4>5. Zombie Apocalypse</h4>
+                    <p><strong>Vibe:</strong> Post-apocalyptic horror</p>
+                    <p><strong>Colors:</strong> Grey, brown, blood red, army green</p>
+                    <p><strong>Decorations:</strong> Caution tape, fake weapons, survival supplies, distressed signs</p>
+                    <p><strong>Dress Code:</strong> Zombies and survivors</p>
+                    <p><strong>Perfect For:</strong> Casual, interactive parties</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">💀</span>
+                    <h4>6. Day of the Dead</h4>
+                    <p><strong>Vibe:</strong> Colorful celebration of life</p>
+                    <p><strong>Colors:</strong> Bright orange, pink, purple, turquoise, gold</p>
+                    <p><strong>Decorations:</strong> Marigolds, sugar skulls, papel picado, altar displays</p>
+                    <p><strong>Dress Code:</strong> Sugar skull makeup, traditional Mexican attire</p>
+                    <p><strong>Perfect For:</strong> Cultural celebrations, daytime parties</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">👻</span>
+                    <h4>7. Classic Halloween</h4>
+                    <p><strong>Vibe:</strong> Traditional and nostalgic</p>
+                    <p><strong>Colors:</strong> Orange, black, purple, green</p>
+                    <p><strong>Decorations:</strong> Jack-o'-lanterns, hay bales, corn stalks, traditional monsters</p>
+                    <p><strong>Dress Code:</strong> Any Halloween costume</p>
+                    <p><strong>Perfect For:</strong> Mixed age groups, families</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🔮</span>
+                    <h4>8. Fortune Teller's Den</h4>
+                    <p><strong>Vibe:</strong> Mysterious and enchanting</p>
+                    <p><strong>Colors:</strong> Deep purple, gold, crimson, black</p>
+                    <p><strong>Decorations:</strong> Tapestries, crystal balls, tarot cards, lanterns, floor cushions</p>
+                    <p><strong>Dress Code:</strong> Mystics, fortune tellers, bohemian</p>
+                    <p><strong>Perfect For:</strong> Intimate gatherings</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🏰</span>
+                    <h4>9. Medieval Horror</h4>
+                    <p><strong>Vibe:</strong> Dark ages meets horror</p>
+                    <p><strong>Colors:</strong> Stone grey, blood red, black, metallic</p>
+                    <p><strong>Decorations:</strong> Torches, shields, swords, dungeon props, chains</p>
+                    <p><strong>Dress Code:</strong> Knights, executioners, medieval peasants</p>
+                    <p><strong>Perfect For:</strong> History buffs, renaissance fair enthusiasts</p>
+                </div>
+
+                <div class="card">
+                    <span class="card-icon">🎬</span>
+                    <h4>10. Horror Movie Marathon</h4>
+                    <p><strong>Vibe:</strong> Cinema-inspired celebration</p>
+                    <p><strong>Colors:</strong> Red, black, white</p>
+                    <p><strong>Decorations:</strong> Movie posters, popcorn stations, red carpet, clapperboards</p>
+                    <p><strong>Dress Code:</strong> Iconic horror movie characters</p>
+                    <p><strong>Perfect For:</strong> Film lovers, casual viewing parties</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h4>🎨 Decoration Budget Breakdown by Theme Tier:</h4>
+                <p><strong>Budget ($50-$100):</strong> Classic Halloween, Horror Movie Marathon<br>
+                <strong>Mid-Range ($150-$300):</strong> Zombie Apocalypse, Day of the Dead, Creepy Carnival<br>
+                <strong>Premium ($400+):</strong> Haunted Mansion, Vampire Ball, Medieval Horror</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 3: BUDGET PLANNING -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 03</div>
+                <h2 class="section-title">Budget Planning Guide</h2>
+                <p class="section-intro">Host an amazing party at any price point. Here's how to allocate your funds wisely.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>The $100-$200 Budget (Intimate Gathering, 10-15 guests)</h3>
+                <table class="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Tips</th>
+                    </tr>
+                    <tr>
+                        <td>Decorations</td>
+                        <td>$25-$35</td>
+                        <td>DIY focus, dollar store finds, printables</td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>$40-$50</td>
+                        <td>Potluck style, finger foods, simple apps</td>
+                    </tr>
+                    <tr>
+                        <td>Drinks</td>
+                        <td>$30-$40</td>
+                        <td>2 signature cocktails, beer, basic mixers</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>$5-$10</td>
+                        <td>Spotify playlist, printed game cards</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous</td>
+                        <td>$10-$15</td>
+                        <td>Paper products, ice, emergency supplies</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h3>The $400-$600 Budget (Medium Party, 20-30 guests)</h3>
+                <table class="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Tips</th>
+                    </tr>
+                    <tr>
+                        <td>Decorations</td>
+                        <td>$80-$120</td>
+                        <td>Mix of premium and DIY, lighting effects</td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>$150-$200</td>
+                        <td>Catered apps or charcuterie spread</td>
+                    </tr>
+                    <tr>
+                        <td>Drinks</td>
+                        <td>$120-$150</td>
+                        <td>Full bar, premium mixers, garnishes</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>$30-$50</td>
+                        <td>Photo booth props, games, music subscription</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous</td>
+                        <td>$20-$30</td>
+                        <td>Rentals, cleaning supplies, party favors</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="content-block">
+                <h3>The $1000+ Budget (Epic Party, 40+ guests)</h3>
+                <table class="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Allocation</th>
+                        <th>Tips</th>
+                    </tr>
+                    <tr>
+                        <td>Decorations</td>
+                        <td>$200-$300</td>
+                        <td>Professional setup, lighting designer, custom pieces</td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>$400-$500</td>
+                        <td>Full catering service, multiple stations</td>
+                    </tr>
+                    <tr>
+                        <td>Drinks</td>
+                        <td>$250-$350</td>
+                        <td>Premium spirits, professional bartender, specialty drinks</td>
+                    </tr>
+                    <tr>
+                        <td>Entertainment</td>
+                        <td>$200-$300</td>
+                        <td>DJ or live entertainment, professional photo booth</td>
+                    </tr>
+                    <tr>
+                        <td>Miscellaneous</td>
+                        <td>$100-$150</td>
+                        <td>Rentals, valet, cleanup service, party favors</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tip-box">
+                <strong>💰 Money-Saving Hacks:</strong>
+                <ul>
+                    <li>Shop post-Halloween sales the previous year</li>
+                    <li>Borrow decorations from friends hosting different themes</li>
+                    <li>Make your own dry ice fog effects (safer and cheaper)</li>
+                    <li>Buy alcohol from Costco or wholesale clubs</li>
+                    <li>Use digital invitations instead of printed</li>
+                    <li>DIY photo booth with a smartphone and tripod</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 4: COCKTAIL RECIPES -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 04</div>
+                <h2 class="section-title">20 Show-Stopping Cocktail Recipes</h2>
+                <p class="section-intro">Signature drinks make your party memorable. Each recipe serves 1 unless noted.</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">🧪</span>
+                    <h3 class="recipe-title">The Witch's Brew</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 3 min</span>
+                    <span>🍹 Vodka-based</span>
+                    <span>💚 Difficulty: Easy</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>2 oz vodka</li>
+                        <li>1 oz Midori melon liqueur</li>
+                        <li>3 oz lemon-lime soda</li>
+                        <li>1 oz fresh lime juice</li>
+                        <li>Dry ice pellet (optional, for effect)</li>
+                        <li>Gummy worms for garnish</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> Fill glass with ice. Add vodka, Midori, and lime juice. Top with soda. Carefully add small dry ice pellet for smoking effect. Garnish with gummy worms draped over rim.</p>
+                <p><strong>Pro Tip:</strong> Pre-batch without soda for easy serving. Add soda individually.</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">🩸</span>
+                    <h3 class="recipe-title">Vampire's Kiss</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 5 min</span>
+                    <span>🍹 Vodka or Rum</span>
+                    <span>❤️ Difficulty: Medium</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>2 oz vodka or white rum</li>
+                        <li>1 oz Chambord (raspberry liqueur)</li>
+                        <li>3 oz cranberry juice</li>
+                        <li>½ oz fresh lime juice</li>
+                        <li>Red sugar for rim</li>
+                        <li>Red food coloring (for "blood" drip)</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> Rim glass with red sugar. Mix food coloring with corn syrup, drip down inside of glass. In shaker with ice, combine vodka, Chambord, cranberry juice, and lime. Shake well. Strain into prepared glass over ice.</p>
+                <p><strong>Batch Recipe (10 servings):</strong> 20 oz vodka, 10 oz Chambord, 30 oz cranberry juice, 5 oz lime juice.</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">🎃</span>
+                    <h3 class="recipe-title">Pumpkin Spice Martini</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 4 min</span>
+                    <span>🍹 Vodka-based</span>
+                    <span>🧡 Difficulty: Medium</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>2 oz vanilla vodka</li>
+                        <li>1 oz pumpkin liqueur or pumpkin spice syrup</li>
+                        <li>1 oz heavy cream or half & half</li>
+                        <li>½ oz maple syrup</li>
+                        <li>Pinch of cinnamon & nutmeg</li>
+                        <li>Whipped cream and cinnamon stick for garnish</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> Rim martini glass with cinnamon sugar. In shaker with ice, combine vodka, pumpkin liqueur, cream, maple syrup, and spices. Shake vigorously for 15 seconds. Strain into glass. Top with whipped cream and cinnamon stick.</p>
+                <p><strong>Make it boozy:</strong> Skip the cream and add an extra oz of vodka for a stronger version.</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">💀</span>
+                    <h3 class="recipe-title">Black Magic Margarita</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 4 min</span>
+                    <span>🍹 Tequila-based</span>
+                    <span>🖤 Difficulty: Easy</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>2 oz silver tequila</li>
+                        <li>1 oz fresh lime juice</li>
+                        <li>1 oz orange liqueur (Cointreau or Triple Sec)</li>
+                        <li>½ oz simple syrup</li>
+                        <li>Activated charcoal powder (food-grade) or black food coloring</li>
+                        <li>Black lava salt for rim</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> Rim glass with black lava salt. In shaker, combine tequila, lime juice, orange liqueur, simple syrup, and tiny pinch of activated charcoal. Shake with ice. Strain into glass over fresh ice. Garnish with lime wheel.</p>
+                <p><strong>Safety Note:</strong> Use only food-grade activated charcoal. A little goes a long way!</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">👻</span>
+                    <h3 class="recipe-title">Ghostly White Russian</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 2 min</span>
+                    <span>🍹 Vodka-based</span>
+                    <span>🤍 Difficulty: Easy</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>2 oz vodka</li>
+                        <li>1 oz coffee liqueur (Kahlúa)</li>
+                        <li>1 oz heavy cream</li>
+                        <li>White edible glitter or pearl dust</li>
+                        <li>Marshmallow ghost for garnish</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> Fill glass with ice. Add vodka and coffee liqueur. Float cream on top by pouring over the back of a spoon. Sprinkle with edible glitter. Add marshmallow ghost on cocktail pick.</p>
+                <p><strong>DIY Marshmallow Ghosts:</strong> Draw faces on large marshmallows with edible marker.</p>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <span class="recipe-icon">🍊</span>
+                    <h3 class="recipe-title">Poison Apple Punch (Serves 12)</h3>
+                </div>
+                <div class="recipe-meta">
+                    <span>⏱️ 10 min</span>
+                    <span>🍹 Rum-based</span>
+                    <span>🍎 Difficulty: Easy</span>
+                </div>
+                <div class="ingredients-list">
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        <li>1 bottle (750ml) spiced rum</li>
+                        <li>4 cups apple cider</li>
+                        <li>2 cups ginger ale</li>
+                        <li>1 cup cranberry juice</li>
+                        <li>2 cinnamon sticks</li>
+                        <li>Apple slices and fresh cranberries for garnish</li>
+                        <li>Dry ice for effect</li>
+                    </ul>
+                </div>
+                <p><strong>Instructions:</strong> In large punch bowl, combine rum, apple cider, and cranberry juice. Add cinnamon sticks and refrigerate 2 hours. Just before serving, add ginger ale, apple slices, and cranberries. Carefully add dry ice chunks for smoking effect.</p>
+                <p><strong>Non-Alcoholic Version:</strong> Replace rum with 3 cups apple juice and 1 tsp vanilla extract.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h4>🍹 Quick Reference: Bar Essentials Checklist</h4>
+                <div class="grid-2">
+                    <div>
+                        <strong>Base Spirits:</strong>
+                        <ul>
+                            <li>Vodka (2-3 bottles)</li>
+                            <li>Rum (light & dark)</li>
+                            <li>Tequila (silver)</li>
+                            <li>Whiskey/Bourbon</li>
+                            <li>Gin</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Mixers & Extras:</strong>
+                        <ul>
+                            <li>Cranberry juice</li>
+                            <li>Orange juice</li>
+                            <li>Lime juice (fresh)</li>
+                            <li>Simple syrup</li>
+                            <li>Tonic water</li>
+                            <li>Cola, ginger ale, club soda</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Additional Quick Cocktail Recipes</h3>
+                
+                <h4>7. Blood Orange Sangria</h4>
+                <p>Red wine + blood orange juice + brandy + orange slices + cinnamon + honey</p>
+
+                <h4>8. Poison Ivy Mojito</h4>
+                <p>White rum + mint + lime + green crème de menthe + club soda</p>
+
+                <h4>9. Graveyard Smash</h4>
+                <p>Bourbon + lemon juice + maple syrup + activated charcoal + rosemary</p>
+
+                <h4>10. Candy Corn Cocktail (layered)</h4>
+                <p>Layer 1: Pineapple juice + vanilla vodka | Layer 2: Orange juice + whipped vodka | Layer 3: Grenadine</p>
+
+                <h4>11. Werewolf's Howl</h4>
+                <p>Whiskey + ginger beer + lime + honey + jalapeño slice</p>
+
+                <h4>12. Zombie Brain Hemorrhage (Shot)</h4>
+                <p>Peach schnapps + Bailey's Irish Cream + grenadine drizzle</p>
+
+                <h4>13. Black Cat Martini</h4>
+                <p>Black vodka + coffee liqueur + espresso + simple syrup</p>
+
+                <h4>14. Wicked Witch of the West</h4>
+                <p>Gin + elderflower liqueur + cucumber + lime + mint</p>
+
+                <h4>15. Frankenstein's Monster Mule</h4>
+                <p>Vodka + ginger beer + lime + blue curaçao + green food coloring</p>
+
+                <h4>16. Haunted Hot Toddy</h4>
+                <p>Whiskey + hot water + honey + lemon + cinnamon stick + star anise</p>
+
+                <h4>17. Spider Cider</h4>
+                <p>Apple cider + cinnamon whiskey + lemon + garnish with black licorice "spider legs"</p>
+
+                <h4>18. Purple People Eater</h4>
+                <p>UV Blue vodka + cranberry juice + sweet & sour + lemon-lime soda</p>
+
+                <h4>19. Midnight Margarita</h4>
+                <p>Tequila + blackberry liqueur + lime + agave + fresh blackberries</p>
+
+                <h4>20. The Exorcist</h4>
+                <p>Gin + tonic + lime + dry ice fog effect + glow-in-the-dark ice cubes</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 5: PARTY GAMES -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 05</div>
+                <h2 class="section-title">15 Party Games That Work</h2>
+                <p class="section-intro">Keep energy high and guests engaged with this mix of drinking games, icebreakers, and interactive entertainment.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Drinking Games (Ages 21+)</h3>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>1. 🎬 Horror Movie Drinking Game</h4>
+                    <p><strong>Players:</strong> 4-20 | <strong>Duration:</strong> Length of movie</p>
+                    <p><strong>Setup:</strong> Pick a horror movie and create drinking rules:</p>
+                    <ul>
+                        <li>Someone says "Don't go in there" - 1 sip</li>
+                        <li>Character trips while running - 2 sips</li>
+                        <li>Power/phone goes out - 3 sips</li>
+                        <li>Group splits up - Everyone drinks</li>
+                        <li>Jump scare - Last person to scream drinks</li>
+                        <li>Someone dies - Moment of silence, then drink</li>
+                    </ul>
+                    <p><strong>Best movies:</strong> Scream, Friday the 13th, Halloween, Nightmare on Elm Street</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>2. 💀 Paranoia: Halloween Edition</h4>
+                    <p><strong>Players:</strong> 6-15 | <strong>Duration:</strong> 30-60 min</p>
+                    <p><strong>How to Play:</strong></p>
+                    <ol>
+                        <li>Sit in a circle. First person whispers a question to the person on their right (e.g., "Who here would survive longest in a zombie apocalypse?")</li>
+                        <li>That person answers OUT LOUD with someone's name in the circle</li>
+                        <li>The group drinks</li>
+                        <li>Flip a coin: Heads = reveal the question to everyone | Tails = keep it secret</li>
+                        <li>The person whose name was called goes next</li>
+                    </ol>
+                    <p><strong>Why it works:</strong> Creates hilarious paranoia and speculation</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>3. 🎃 Pumpkin Pong</h4>
+                    <p><strong>Players:</strong> 4-8 | <strong>Duration:</strong> 20-40 min</p>
+                    <p><strong>Setup:</strong> Standard beer pong with Halloween twists:</p>
+                    <ul>
+                        <li>Use orange Solo cups</li>
+                        <li>Mark 2 cups as "cursed" - double drink if hit</li>
+                        <li>1 "ghost" cup - grants immunity from next shot</li>
+                        <li>1 "mystery" cup - contains dare card</li>
+                    </ul>
+                    <p><strong>Dare ideas:</strong> Speak in accent, wear prop, do impression, swap costume piece</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>4. 🕷️ Categories: Spooky Edition</h4>
+                    <p><strong>Players:</strong> 4-12 | <strong>Duration:</strong> 15-30 min</p>
+                    <p><strong>How to Play:</strong> Choose category, go around circle naming items. First to hesitate/repeat drinks!</p>
+                    <p><strong>Categories:</strong></p>
+                    <ul>
+                        <li>Horror movie villains</li>
+                        <li>Things in a witch's cauldron</li>
+                        <li>Ways to kill a vampire</li>
+                        <li>Halloween candy brands</li>
+                        <li>Famous monsters</li>
+                        <li>Haunted locations</li>
+                        <li>Superstitions</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>5. 👻 Never Have I Ever: Halloween Edition</h4>
+                    <p><strong>Players:</strong> 4-15 | <strong>Duration:</strong> 20-30 min</p>
+                    <p><strong>Halloween-Specific Prompts:</strong></p>
+                    <ul>
+                        <li>Never have I ever believed I saw a ghost</li>
+                        <li>Never have I ever been to a graveyard at night</li>
+                        <li>Never have I ever watched a horror movie alone</li>
+                        <li>Never have I ever worn a couples costume</li>
+                        <li>Never have I ever carved a pumpkin while drunk</li>
+                        <li>Never have I ever gone to a haunted house attraction</li>
+                        <li>Never have I ever had a Halloween hookup</li>
+                        <li>Never have I ever stolen Halloween candy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Interactive Games (All Ages)</h3>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>6. 🎭 Murder Mystery Dinner</h4>
+                    <p><strong>Players:</strong> 6-12 | <strong>Duration:</strong> 2-3 hours</p>
+                    <p><strong>Setup:</strong> Purchase or download murder mystery kit. Assign characters before party. Guests come in character and solve murder throughout dinner.</p>
+                    <p><strong>Popular themes:</strong> 1920s speakeasy, Victorian mansion, zombie outbreak</p>
+                    <p><strong>Pro Tip:</strong> Send character descriptions 1 week early so guests can prepare costumes</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>7. 🏆 Costume Contest</h4>
+                    <p><strong>Players:</strong> Everyone | <strong>Duration:</strong> 30 min</p>
+                    <p><strong>Categories:</strong></p>
+                    <ul>
+                        <li>Scariest Costume</li>
+                        <li>Funniest Costume</li>
+                        <li>Most Creative DIY</li>
+                        <li>Best Couples/Group Costume</li>
+                        <li>Sexiest Costume</li>
+                        <li>Most Original Concept</li>
+                        <li>Audience Favorite</li>
+                    </ul>
+                    <p><strong>Prizes:</strong> Gift cards, party supplies, bragging rights trophy</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>8. 🎤 Karaoke: Spooky Songs Only</h4>
+                    <p><strong>Players:</strong> 4-20 | <strong>Duration:</strong> 1-2 hours</p>
+                    <p><strong>Playlist Must-Haves:</strong></p>
+                    <ul>
+                        <li>Thriller - Michael Jackson</li>
+                        <li>Monster Mash - Bobby Pickett</li>
+                        <li>Ghostbusters - Ray Parker Jr.</li>
+                        <li>Somebody's Watching Me - Rockwell</li>
+                        <li>Time Warp - Rocky Horror</li>
+                        <li>Disturbia - Rihanna</li>
+                        <li>Bad Guy - Billie Eilish</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>9. 🔦 Ghost Story Circle</h4>
+                    <p><strong>Players:</strong> 6-15 | <strong>Duration:</strong> 45-60 min</p>
+                    <p><strong>Setup:</strong> Turn off all lights except candles/flashlights. Sit in circle. Each person shares scariest true story or urban legend.</p>
+                    <p><strong>Variations:</strong> Vote on scariest story, winner gets prize. Or do "exquisite corpse" style where each person adds to one collective story.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>10. 🎯 Halloween Scavenger Hunt</h4>
+                    <p><strong>Players:</strong> 8-20 (teams of 2-4) | <strong>Duration:</strong> 45-60 min</p>
+                    <p><strong>Items to Find:</strong></p>
+                    <ul>
+                        <li>Someone dressed as a witch</li>
+                        <li>A real pumpkin</li>
+                        <li>Three different candy brands</li>
+                        <li>A photo with a skeleton decoration</li>
+                        <li>Someone doing their best monster impression (video)</li>
+                        <li>A black cat (real or decoration)</li>
+                        <li>Halloween themed cocktail recipe</li>
+                    </ul>
+                    <p><strong>Prize:</strong> First team back wins bottles of wine or gift basket</p>
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3>Icebreaker Games</h3>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>11. 🎲 Two Truths and a Lie: Halloween Edition</h4>
+                    <p>Each guest shares three Halloween-related statements. Group guesses which is the lie. Great for when guests are still arriving.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>12. 🤔 Would You Rather: Spooky Scenarios</h4>
+                    <p>Quick-fire questions: Be chased by zombies or hunted by vampire? Spend night in haunted house or graveyard? Have x-ray vision or read minds?</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>13. 🎭 Horror Movie Charades</h4>
+                    <p>Act out horror movie titles without speaking. Divide into teams for competition element.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>14. 🧠 Halloween Trivia Challenge</h4>
+                    <p>Prepare 20-30 questions about Halloween history, horror movies, and pop culture. Use Kahoot or printed answer sheets.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>15. 📱 Social Media Challenge</h4>
+                    <p>Create party hashtag. Challenge guests to post best photo/video. Most likes by end of night wins prize. Drives engagement and memories.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ Important Reminder:</strong> Always provide non-alcoholic alternatives and never pressure guests to drink. The goal is fun, not discomfort. Have water stations visible and encourage responsible consumption.
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 6: FOOD MENU IDEAS -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 06</div>
+                <h2 class="section-title">Food & Menu Planning</h2>
+                <p class="section-intro">Feed your guests with themed dishes that look as good as they taste.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>The 3-Tier Food Strategy</h3>
+                
+                <h4>Tier 1: Finger Foods & Apps (For mingling)</h4>
+                <ul>
+                    <li><strong>Mummy Dogs:</strong> Hot dogs wrapped in crescent roll strips, eyes made from mustard dots</li>
+                    <li><strong>Deviled Eggs:</strong> Classic recipe topped with olive "spiders"</li>
+                    <li><strong>Caprese Skewers:</strong> Tomato, mozzarella, basil with balsamic drizzle</li>
+                    <li><strong>Witches' Fingers:</strong> Bread stick dipped in pesto, almond "fingernail"</li>
+                    <li><strong>Pumpkin Hummus:</strong> Regular hummus with paprika pumpkin design, served with vegetables</li>
+                </ul>
+
+                <h4>Tier 2: Substantial Bites (For staying power)</h4>
+                <ul>
+                    <li><strong>Charcuterie "Graveyard":</strong> Cheese board arranged with tombstone crackers, salami roses</li>
+                    <li><strong>Mini Sliders:</strong> Beef or veggie burgers with fun name cards</li>
+                    <li><strong>Buffalo Chicken Dip:</strong> Served in hollowed-out bread bowl</li>
+                    <li><strong>Taco Bar:</strong> DIY station with all fixings, easy and crowd-pleasing</li>
+                    <li><strong>Pizza Coffins:</strong> Rectangle pizza slices arranged in coffin shape</li>
+                </ul>
+
+                <h4>Tier 3: Sweet Treats (For the sugar rush)</h4>
+                <ul>
+                    <li><strong>Graveyard Brownies:</strong> Brownies decorated with cookie "tombstones"</li>
+                    <li><strong>Candy Apple Bar:</strong> DIY station with caramel, toppings, and sticks</li>
+                    <li><strong>Pumpkin Cookies:</strong> Sugar cookies with orange frosting</li>
+                    <li><strong>Ghost Cupcakes:</strong> Chocolate cupcakes with white frosting ghosts</li>
+                    <li><strong>Candy Corn Parfaits:</strong> Layered yogurt/pudding in candy corn colors</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h4>🍽️ Quantity Guide Per Person:</h4>
+                <p><strong>For 4-hour party:</strong></p>
+                <ul>
+                    <li>8-10 pieces finger foods per person</li>
+                    <li>3-4 substantial bites per person</li>
+                    <li>2 dessert servings per person</li>
+                    <li>1 lb ice per person for drinks</li>
+                </ul>
+                <p><strong>Pro Tip:</strong> Order 25% more than calculated to account for favorites and big eaters.</p>
+            </div>
+
+            <div class="tip-box">
+                <strong>🌱 Dietary Restrictions Checklist:</strong>
+                <ul>
+                    <li>Always offer vegetarian options</li>
+                    <li>Label dishes with allergen warnings (nuts, dairy, gluten)</li>
+                    <li>Provide vegan alternative for at least one main dish</li>
+                    <li>Keep ingredients list handy for guests with severe allergies</li>
+                    <li>Have separate serving utensils to prevent cross-contamination</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 7: MUSIC & AMBIANCE -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 07</div>
+                <h2 class="section-title">Music & Ambiance</h2>
+                <p class="section-intro">Sound and lighting create the atmosphere. Get this right and everything else falls into place.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>The Perfect Playlist Strategy</h3>
+                
+                <h4>Hour 1 (6-7 PM): Arrival & Mingling</h4>
+                <p><strong>Vibe:</strong> Mysterious but welcoming, 60-70% volume</p>
+                <p><strong>Genre Mix:</strong> Alternative, indie, moody pop</p>
+                <p><strong>Sample Tracks:</strong></p>
+                <ul>
+                    <li>The Neighbourhood - Sweater Weather</li>
+                    <li>Billie Eilish - bury a friend</li>
+                    <li>Arctic Monkeys - Do I Wanna Know?</li>
+                    <li>Lana Del Rey - Born to Die</li>
+                    <li>The Weeknd - House of Balloons</li>
+                    <li>Banks - Beggin for Thread</li>
+                </ul>
+
+                <h4>Hour 2-3 (7-9 PM): Peak Party Energy</h4>
+                <p><strong>Vibe:</strong> High energy, dancing encouraged, 80-85% volume</p>
+                <p><strong>Genre Mix:</strong> Dance, hip-hop, throwbacks, Halloween classics</p>
+                <p><strong>Sample Tracks:</strong></p>
+                <ul>
+                    <li>Thriller - Michael Jackson</li>
+                    <li>Disturbia - Rihanna</li>
+                    <li>Monster - Lady Gaga</li>
+                    <li>Bloody Mary - Lady Gaga</li>
+                    <li>Superstition - Stevie Wonder</li>
+                    <li>Bad Guy - Billie Eilish</li>
+                    <li>Ghostbusters - Ray Parker Jr.</li>
+                    <li>Monster Mash - Bobby Pickett</li>
+                    <li>This Is Halloween - Marilyn Manson version</li>
+                    <li>Somebody's Watching Me - Rockwell</li>
+                </ul>
+
+                <h4>Hour 4+ (9 PM-End): Wind Down</h4>
+                <p><strong>Vibe:</strong> Chill vibes, conversation-friendly, 60-70% volume</p>
+                <p><strong>Genre Mix:</strong> R&B, throwback slow jams, acoustic covers</p>
+                <p><strong>Sample Tracks:</strong></p>
+                <ul>
+                    <li>The Weeknd - Blinding Lights (slower remix)</li>
+                    <li>Frank Ocean - Thinkin Bout You</li>
+                    <li>SZA - Good Days</li>
+                    <li>Cigarettes After Sex - Apocalypse</li>
+                </ul>
+            </div>
+
+            <div class="tip-box">
+                <strong>🎵 Playlist Pro Tips:</strong>
+                <ul>
+                    <li>Create 6-hour playlist (party will run longer than expected)</li>
+                    <li>Use crossfade feature on Spotify for seamless transitions</li>
+                    <li>Test entire playlist beforehand to remove explicit versions if needed</li>
+                    <li>Download playlist for offline play (WiFi can be spotty)</li>
+                    <li>Assign one trusted friend as "DJ" to adjust volume and skip if needed</li>
+                    <li>Avoid songs with long intros - keep energy flowing</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Lighting Design</h3>
+                
+                <h4>Essential Lighting Elements:</h4>
+                <ul>
+                    <li><strong>Overhead Lights:</strong> Turn OFF or dim to 20-30%</li>
+                    <li><strong>String Lights:</strong> Orange, purple, or white for ambiance</li>
+                    <li><strong>LED Candles:</strong> Safer than real, still atmospheric</li>
+                    <li><strong>Smart Bulbs:</strong> Color-changing for theme (Philips Hue, LIFX)</li>
+                    <li><strong>Black Lights:</strong> Makes white items glow, creates eerie effect</li>
+                    <li><strong>Projection Lights:</strong> Project ghosts, bats, or spiders on walls</li>
+                    <li><strong>Uplighting:</strong> Place floor lamps behind furniture for dramatic shadows</li>
+                </ul>
+
+                <h4>Room-by-Room Lighting Guide:</h4>
+                <p><strong>Entryway:</strong> Dim but navigable, flickering LED candles</p>
+                <p><strong>Main Party Space:</strong> Orange/purple string lights, dance floor spot</p>
+                <p><strong>Bar Area:</strong> Brighter than rest (safety for pouring), colored bulbs</p>
+                <p><strong>Bathroom:</strong> Keep normal lighting for safety</p>
+                <p><strong>Outdoor Space:</strong> Solar stake lights, tiki torches, string lights</p>
+            </div>
+
+            <div class="highlight-box">
+                <h4>💡 Budget Lighting Setup ($50-$100):</h4>
+                <ul>
+                    <li>3 strands orange string lights ($30)</li>
+                    <li>20-pack LED candles ($15)</li>
+                    <li>Purple bulbs for lamps ($10)</li>
+                    <li>Glow sticks for drinks ($10)</li>
+                    <li>Flashlight with colored cellophane for DIY spotlight ($5)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 8: PHOTO BOOTH -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 08</div>
+                <h2 class="section-title">Photo Booth Setup</h2>
+                <p class="section-intro">Create Instagram-worthy moments that guests will share and remember.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>DIY Photo Booth in 5 Steps</h3>
+
+                <h4>Step 1: Choose Your Location</h4>
+                <ul>
+                    <li>Find well-lit area or bring in extra lighting</li>
+                    <li>Minimum 8x8 feet of space</li>
+                    <li>Against blank wall or dedicated backdrop</li>
+                    <li>Away from main party flow to avoid photobombs</li>
+                </ul>
+
+                <h4>Step 2: Set Up Backdrop</h4>
+                <p><strong>Budget Options:</strong></p>
+                <ul>
+                    <li>Black tablecloth with orange streamer curtain ($15)</li>
+                    <li>Foil fringe backdrop from party store ($10)</li>
+                    <li>DIY balloon garland in Halloween colors ($25)</li>
+                </ul>
+                <p><strong>Premium Options:</strong></p>
+                <ul>
+                    <li>Custom printed backdrop banner ($50-100)</li>
+                    <li>Fabric draping with fairy lights ($60)</li>
+                    <li>Haunted mansion scene setter ($30)</li>
+                </ul>
+
+                <h4>Step 3: Gather Props</h4>
+                <p><strong>Essential Props (Buy or DIY):</strong></p>
+                <ul>
+                    <li>Witch hats and broomsticks</li>
+                    <li>Vampire capes and fangs</li>
+                    <li>Speech bubble signs ("BOO!", "Feeling Spooky")</li>
+                    <li>Oversized sunglasses and masks</li>
+                    <li>Fake weapons (plastic axes, knives)</li>
+                    <li>Photo frame cutouts</li>
+                    <li>Mustaches and lips on sticks</li>
+                </ul>
+
+                <h4>Step 4: Set Up Camera</h4>
+                <p><strong>Option A: Smartphone + Tripod</strong></p>
+                <ul>
+                    <li>Phone tripod ($15-30)</li>
+                    <li>Use timer mode or Bluetooth remote</li>
+                    <li>Good for intimate gatherings</li>
+                </ul>
+                <p><strong>Option B: DSLR Camera</strong></p>
+                <ul>
+                    <li>If you have one available</li>
+                    <li>Set to auto mode</li>
+                    <li>Better quality, more professional</li>
+                </ul>
+                <p><strong>Option C: Instant Camera</strong></p>
+                <ul>
+                    <li>Fujifilm Instax or Polaroid</li>
+                    <li>Guests take home prints</li>
+                    <li>Budget for film ($0.75-1.00 per photo)</li>
+                </ul>
+
+                <h4>Step 5: Create Engagement</h4>
+                <ul>
+                    <li>Post sign with party hashtag</li>
+                    <li>Encourage social media sharing</li>
+                    <li>Offer prize for best photo</li>
+                    <li>Have guest book where people can tape Polaroids</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h4>📸 Complete Photo Booth Checklist</h4>
+                <div class="checklist">
+                    <li>Backdrop secured to wall</li>
+                    <li>Good lighting (ring light or lamps)</li>
+                    <li>Camera/phone charged and ready</li>
+                    <li>Props organized in baskets</li>
+                    <li>Sign with instructions and hashtag</li>
+                    <li>Mirror for costume checks</li>
+                    <li>Small table for phones/drinks</li>
+                    <li>Backup battery pack</li>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <strong>💡 Photo Booth Hack:</strong> Use a ring light ($25-40 on Amazon) positioned above camera. It eliminates shadows and makes everyone look amazing. Game-changer for iPhone photos!
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 9: SAFETY & ETIQUETTE -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 09</div>
+                <h2 class="section-title">Safety & Hosting Etiquette</h2>
+                <p class="section-intro">Be a responsible host who ensures everyone has a safe, enjoyable experience.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Alcohol Safety Protocol</h3>
+
+                <h4>Before the Party:</h4>
+                <ul>
+                    <li>Arrange designated drivers or rideshare credits</li>
+                    <li>Stock non-alcoholic beverage options</li>
+                    <li>Plan guest room for anyone who needs to stay</li>
+                    <li>Have emergency contacts list printed</li>
+                    <li>Know location of nearest urgent care</li>
+                </ul>
+
+                <h4>During the Party:</h4>
+                <ul>
+                    <li>Monitor guests' alcohol consumption discreetly</li>
+                    <li>Cut off anyone who seems overly intoxicated</li>
+                    <li>Keep water stations visible and accessible</li>
+                    <li>Serve substantial food throughout evening</li>
+                    <li>Stop serving alcohol 1-2 hours before end time</li>
+                    <li>Never pressure anyone to drink</li>
+                </ul>
+
+                <h4>End of Party:</h4>
+                <ul>
+                    <li>Ensure everyone has safe ride home</li>
+                    <li>Call Uber/Lyft for guests who need it</li>
+                    <li>Offer couch or spare room to anyone impaired</li>
+                    <li>Never let someone drive drunk - take their keys if necessary</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <strong>⚠️ Legal Liability:</strong> As a host, you can be held liable if an intoxicated guest causes harm. Always err on the side of caution. It's better to upset one guest than risk tragedy.
+            </div>
+
+            <div class="content-block">
+                <h3>Creating Inclusive Environment</h3>
+
+                <h4>Costume Sensitivity:</h4>
+                <ul>
+                    <li>Include on invitation: "Please avoid costumes that mock cultures, religions, or sensitive topics"</li>
+                    <li>Gently redirect if someone shows up in offensive costume</li>
+                    <li>Have backup costume pieces available for emergencies</li>
+                </ul>
+
+                <h4>Dietary Accommodations:</h4>
+                <ul>
+                    <li>Ask about allergies and restrictions when sending invites</li>
+                    <li>Label all food with ingredients</li>
+                    <li>Always have vegetarian and vegan options</li>
+                    <li>Keep cross-contamination in mind</li>
+                </ul>
+
+                <h4>Social Comfort:</h4>
+                <ul>
+                    <li>Introduce guests who don't know each other</li>
+                    <li>Create designated "quiet space" for introverts</li>
+                    <li>Have activities beyond just drinking</li>
+                    <li>Make sure no one is standing alone</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Neighbor Relations</h3>
+
+                <h4>Before the Party:</h4>
+                <ul>
+                    <li>Give neighbors 3-5 days notice about party</li>
+                    <li>Provide your phone number for noise concerns</li>
+                    <li>Set clear end time and stick to it</li>
+                    <li>Consider inviting neighbors to join</li>
+                </ul>
+
+                <h4>During the Party:</h4>
+                <ul>
+                    <li>Keep music at reasonable volume</li>
+                    <li>Direct guests to park considerately</li>
+                    <li>Keep outdoor noise contained</li>
+                    <li>Monitor smoking areas if applicable</li>
+                </ul>
+
+                <h4>After the Party:</h4>
+                <ul>
+                    <li>Clean up any street mess immediately</li>
+                    <li>Send thank you note or small gift to closest neighbors</li>
+                    <li>Address any complaints promptly and apologetically</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 10: DAY-OF CHECKLIST -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 10</div>
+                <h2 class="section-title">Day-Of Master Checklist</h2>
+                <p class="section-intro">Execute flawlessly with this hour-by-hour guide for party day.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">Morning (8 AM - 12 PM)</div>
+                    <ul class="checklist">
+                        <li>Review entire plan and timeline</li>
+                        <li>Do final grocery run for fresh items</li>
+                        <li>Pick up ice (1 lb per person minimum)</li>
+                        <li>Charge all devices (phone, speakers, cameras)</li>
+                        <li>Eat proper breakfast (you'll be busy later!)</li>
+                        <li>Do quick house clean of non-party areas</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Early Afternoon (12 PM - 3 PM)</div>
+                    <ul class="checklist">
+                        <li>Set up all decorations</li>
+                        <li>Arrange furniture for optimal flow</li>
+                        <li>Set up bar station with all supplies</li>
+                        <li>Prep all food that can be done early</li>
+                        <li>Set up photo booth area</li>
+                        <li>Test sound system and create party playlist queue</li>
+                        <li>Put out guest bathroom supplies</li>
+                        <li>Hide valuables and fragile items</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Late Afternoon (3 PM - 5 PM)</div>
+                    <ul class="checklist">
+                        <li>Take 30-minute break - sit down, hydrate, eat</li>
+                        <li>Shower and start getting ready</li>
+                        <li>Put on costume and do makeup/hair</li>
+                        <li>Final food prep and arrangement</li>
+                        <li>Set out all snacks and appetizers</li>
+                        <li>Fill ice buckets</li>
+                        <li>Light candles (if using real ones)</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Pre-Party (5 PM - 6 PM)</div>
+                    <ul class="checklist">
+                        <li>Do complete walkthrough of entire space</li>
+                        <li>Test lighting and adjust as needed</li>
+                        <li>Start music at low volume</li>
+                        <li>Set out cocktail recipe cards</li>
+                        <li>Put phone on charger one last time</li>
+                        <li>Take deep breath - you've got this!</li>
+                        <li>Be ready 15 minutes before official start time</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-title">Party Time! (6 PM onwards)</div>
+                    <ul class="checklist">
+                        <li>Greet each guest personally at door</li>
+                        <li>Offer drink immediately upon arrival</li>
+                        <li>Make introductions between guests</li>
+                        <li>Refresh food and drinks regularly</li>
+                        <li>Take candid photos throughout night</li>
+                        <li>Participate and enjoy - don't just host!</li>
+                        <li>Monitor drunk guests and intervene if needed</li>
+                        <li>Start cleanup gradually as party winds down</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h4>🆘 Emergency Kit</h4>
+                <p>Keep these items accessible throughout party:</p>
+                <div class="grid-2">
+                    <ul>
+                        <li>Pain reliever (ibuprofen/acetaminophen)</li>
+                        <li>Antacids</li>
+                        <li>Band-aids</li>
+                        <li>Stain remover pen</li>
+                        <li>Safety pins</li>
+                        <li>Phone chargers</li>
+                    </ul>
+                    <ul>
+                        <li>Extra toilet paper</li>
+                        <li>Paper towels</li>
+                        <li>Trash bags</li>
+                        <li>Bottled water</li>
+                        <li>Snacks for sobering up</li>
+                        <li>Rideshare apps ready</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 11: TROUBLESHOOTING -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 11</div>
+                <h2 class="section-title">Party Emergency Troubleshooting</h2>
+                <p class="section-intro">Handle any crisis with grace and confidence.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Common Party Problems & Solutions</h3>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Guests Arriving Too Early</h4>
+                    <p><strong>Solution:</strong> Greet warmly, offer drink, put them to work with final setup tasks. Early guests often become your best helpers!</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Nobody's Dancing</h4>
+                    <p><strong>Solution:</strong> You go first! Grab 2-3 outgoing friends and start dancing. Others will follow. Or start a group game to break the ice.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Running Out of Ice/Drinks</h4>
+                    <p><strong>Solution:</strong> Send someone on emergency run immediately. Switch to room-temperature drinks. Slow down serving pace.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Someone Too Drunk</h4>
+                    <p><strong>Solution:</strong> Get them water and food. Have friend stay with them. If severe, call for medical help. Do NOT leave them alone.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Neighbor Complaint</h4>
+                    <p><strong>Solution:</strong> Apologize sincerely. Turn down music immediately. Move outdoor activities inside. Offer them invitation to join.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Awkward Silence/Dead Energy</h4>
+                    <p><strong>Solution:</strong> Start a group game immediately. Change music to something upbeat and familiar. Do a group shot or toast.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Guests Not Leaving</h4>
+                    <p><strong>Solution:</strong> Start cleanup. Turn up lights. Stop serving alcohol. Announce "last call." Offer to call rideshares.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Food Running Out</h4>
+                    <p><strong>Solution:</strong> Order pizza or Chinese food delivery. Most guests will chip in. Makes a fun late-night addition.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Drama Between Guests</h4>
+                    <p><strong>Solution:</strong> Separate them calmly. Talk to each privately. If serious, ask one to leave. Your party, your rules.</p>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h4>Problem: Something Breaks</h4>
+                    <p><strong>Solution:</strong> Clean up immediately for safety. Don't make scene. Deal with replacement costs later. Stay calm and don't let it ruin your night.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>🚨 When to End Party Early:</strong>
+                <ul>
+                    <li>Multiple noise complaints from neighbors</li>
+                    <li>Someone becomes violent or threatening</li>
+                    <li>Serious injury occurs</li>
+                    <li>Property damage gets out of hand</li>
+                    <li>You feel unsafe or overwhelmed</li>
+                </ul>
+                <p><strong>Remember:</strong> Your safety and wellbeing come first. Don't be afraid to end a party that's gotten out of control.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SECTION 12: BONUS TIPS -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">Chapter 12</div>
+                <h2 class="section-title">Pro Host Secrets</h2>
+                <p class="section-intro">Advanced tips that separate good parties from legendary ones.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h4>🎯 The 3-Drink Rule</h4>
+                    <p>Plan for 3 drinks per person for first 2 hours, then 1 per hour after. Always overestimate slightly.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🕐 Perfect Start Time</h4>
+                    <p>7 PM on Friday/Saturday is ideal. Early enough for dinner crowd, late enough for work schedules.</p>
+                </div>
+
+                <div class="card">
+                    <h4>👥 Guest List Sweet Spot</h4>
+                    <p>Invite 30-40% more than you want to attend. Typical attendance rate is 60-70% of RSVPs.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🎵 Music Volume Formula</h4>
+                    <p>Should be loud enough to dance to, quiet enough to talk without shouting. Test from every room.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🍽️ Food Timing</h4>
+                    <p>Serve heavy apps in first hour, refresh throughout. Save desserts for hour 3-4 when energy dips.</p>
+                </div>
+
+                <div class="card">
+                    <h4>📸 Photo Strategy</h4>
+                    <p>Take most photos in first 90 minutes when costumes are fresh and everyone's energetic.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🎭 The Host Costume</h4>
+                    <p>Choose something comfortable you can move in. You'll be up and down all night. Skip elaborate makeup that needs touching up.</p>
+                </div>
+
+                <div class="card">
+                    <h4>💡 Lighting Transition</h4>
+                    <p>Start brighter, dim gradually as night goes on. Creates natural atmosphere shift from party to intimate.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🧊 Ice Hack</h4>
+                    <p>Fill bathtub with ice for drinks. Fills your coolers throughout night and creates cool display.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🎁 Party Favors</h4>
+                    <p>Small Halloween candy bags by door. Guests love taking something home. Costs $20-30 total.</p>
+                </div>
+
+                <div class="card">
+                    <h4>📱 Social Media</h4>
+                    <p>Create event hashtag. Encourage posting. Builds excitement before, during, and creates memories after.</p>
+                </div>
+
+                <div class="card">
+                    <h4>🧹 Cleanup Strategy</h4>
+                    <p>Do major cleanup next day when you're rested. Just handle spills, trash, and perishables night-of.</p>
+                </div>
+            </div>
+
+            <div class="tip-box">
+                <strong>💎 The Ultimate Host Mindset:</strong>
+                <p>Your energy sets the party tone. If you're having fun, guests will have fun. Don't stress perfection - embrace the chaos! The best parties have spontaneous moments you can't plan. Stay flexible, stay positive, and remember: you're creating memories, not running a military operation.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer-page">
+            <h2>Now Go Create Magic! 🎃</h2>
+            <p>You now have everything you need to throw an unforgettable Halloween party. Remember: the best parties come from a host who's prepared but not stressed, organized but spontaneous, and most importantly, having as much fun as their guests.</p>
+            <p style="margin-top: 30px;">Bookmark this guide, refer back to it, and don't be afraid to make it your own. Every great party host started somewhere - tonight could be the beginning of your legendary Halloween tradition.</p>
+            <p style="margin-top: 30px; font-size: 1.5em; color: #ff6b00;">Happy Haunting! 👻</p>
+        </div>
+    </div>
+</body>
+</html>
